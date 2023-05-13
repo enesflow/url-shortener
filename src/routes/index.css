@@ -1,0 +1,138 @@
+* {
+	text-align: center;
+	color: #333;
+	font-family: inherit;
+}
+
+#form {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	color: #333;
+	align-self: flex-start;
+	margin-left: 7%;
+}
+
+#url {
+	width: 80%;
+}
+
+#shorten-btn {
+	width: 10%;
+	text-align: center;
+}
+
+#shorten-btn {
+	display: inline-block;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	transition: box-shadow 0.15s ease, transform 0.15s ease;
+	will-change: box-shadow, transform;
+	background: #fcfcfd;
+	box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+		0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+	height: 48px;
+	font-size: 18px;
+	border-radius: 6px;
+	color: #36395a;
+	transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+#shorten-btn:hover {
+	box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+		0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+	transform: translateY(-2px);
+}
+#shorten-btn:active {
+	box-shadow: inset 0px 3px 7px #d6d6e7;
+	transform: translateY(2px);
+}
+
+input {
+	position: relative;
+	cursor: text;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 0 16px;
+	height: 48px;
+	background-color: #fff;
+	border: 1px solid #d6d6e7;
+	border-radius: 3px;
+	color: rgb(35, 38, 59);
+	box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+	overflow: hidden;
+	transition: all 100ms ease-in-out;
+}
+input :focus {
+	border-color: #3c4fe0;
+	box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+}
+
+#shorten_container {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	width: 100%;
+}
+
+#shorten_container > * {
+	margin: 0 5px;
+}
+
+#short {
+	width: 50%;
+}
+
+p {
+	font-size: 15px;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+#file {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	display: none;
+}
+#choose_file {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 170px;
+	font-family: Arial;
+	border: 1px dashed #000;
+	cursor: pointer;
+}
+
+#choose_file:hover {
+	background-color: #f1f1f1;
+}
+
+.forms form {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
