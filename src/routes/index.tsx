@@ -51,7 +51,7 @@ export const useCreateURLAction = routeAction$(async (props, requestEvent) => {
 
 export const useUploadFileAction = routeAction$(async (props, requestEvent) => {
 	console.log("Using server URL", requestEvent.env.get("SERVER_URL"));
-	const file = props.file;
+	const file = props.file as unknown as File;
 	if (file.size == 0) {
 		return {
 			short: "",
@@ -111,7 +111,7 @@ export default component$(() => {
 		});
 		// change text of p tag when file is selected
 		fileInput?.addEventListener("change", () => {
-			fileP!.innerHTML = fileInput!.files![0].name;
+			fileP!.innerHTML = (fileInput! as HTMLInputElement).files![0].name;
 		});
 	});
 
